@@ -23,7 +23,7 @@ func GetAllBooks() ([]Book, error) {
 	return bokks, nil
 
 }
-
+// dsfsfsfsf
 func InsertnewBook(data InsertBook) (interface{}, error) {
 	o := orm.NewOrm()
 	book := Book{
