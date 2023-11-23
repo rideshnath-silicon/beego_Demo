@@ -79,7 +79,6 @@ func TwilioVerifyOTP(phoneNumber string, code string) error {
 	params := &twilioApi.CreateVerificationCheckParams{}
 	params.SetTo("+91" + phoneNumber)
 	params.SetCode(code)
-
 	resp, err := client.VerifyV2.CreateVerificationCheck(beego.AppConfig.String("TWILIO_SERVICES_ID"), params)
 	if err != nil {
 		return err
